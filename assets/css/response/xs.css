@@ -1,0 +1,104 @@
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+
+    /* HERO CONTAINER ---------------------- */
+
+    #js-topButton {
+        right: 1    0px;
+    }
+
+    .hero-container {
+        font-size: 15px;
+    }
+
+    .hero-nav__logo {
+        width: 50%;
+        height: 50%;
+        margin-left: 10px;
+    }
+
+    .hamburger-icon {
+        margin-right: 10px;
+    }
+
+    .hero-content__title, .red-title {
+        font-size: 20px;
+    }
+
+
+    /* ABOUT CONTAINER --------------------- */
+
+    .hobby-circles {
+        width: 100%;
+    }
+
+    /* PROJECTS CONTAINER ------------------- */
+
+    .section-title {
+        margin: 10px 0;
+    }
+
+    /* WEBS ----------- */
+
+    .projects__info-text {
+        width: 95%;
+    }
+
+    .fa-circle-arrow-left {
+        left: 10px;
+    }
+
+    .fa-circle-arrow-right {
+        right: 10px;
+    }
+
+    /* GALLERY ------------- */
+
+    .photogallery-img {
+        width: 280px;
+    }
+
+    .gallery-link {
+        width: 12.5em;
+    }
+
+    .gallery-link a {
+        font-size: 15px;
+    }
+
+    /* INSPIRATION CONTAINER ----------------- */
+
+    .inspiration__item {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .inspiration__text {
+        width: 95%;
+    }
+
+    /* CONTACT CONTAINER -------------------- */
+
+    .contact-container {
+        font-size: 15px;
+    }
+
+    .contact-form {
+        font-size: 15px;
+    }
+
+    /* FOOTER ------------------------------ */
+
+    .footer-container {
+        font-size: 15px;
+    }
+
+    .footer__logo {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+}

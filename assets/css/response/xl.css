@@ -1,0 +1,194 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1500px) {
+
+    /* HERO CONTAINER ------------------------- */
+
+    /* NAV -------------- */
+
+    .hero-nav__logo {
+        margin: 0 30px;
+    }
+
+    .hero-nav__menu li {
+        margin: 0 0;
+        font-size: 16px;
+    }
+
+    .hero-nav__contact {
+        margin: 0 20px 0 0;
+    }
+
+    /* HERO CONTENT ----------- */
+
+    .hero-content__title, .red-title {
+        font-size: 30px;
+    }
+
+    .hero-img {
+        height: 60vh;
+        max-height: 400px;
+    }
+
+    .hero-content__text {
+        width: 90%;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .hero-content__contact {
+        font-size: 16px;
+    }
+
+    /* ABOUT CONTAINER -------------------- */
+
+    .about-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* SKILLBARS -------- */
+
+    .about__skillbars {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .skillbar {
+        width: 100%;
+        margin: auto;
+    }
+
+    .skillbar--centralize {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .bar {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .skill {
+        padding: 2px 5px;
+    }
+
+    /* HOBBIES --------------- */
+
+    .about__hobbies {
+        width: 100%;
+    }
+
+    .hobby-circles {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* PROJETS CONTAINER --------------------- */
+
+    /* WEBS --------------- */
+
+    .fa-circle-arrow-left  {
+        left: 50px;
+        margin: 13em 0;
+    }
+
+    .fa-circle-arrow-right {
+        right: 50px;
+        margin: 13em 0;
+    }
+
+    @media only screen and (max-width: 1290px) {
+
+        .projects__webs {
+            width: 90%;
+            margin: 20px auto 40px auto;
+        }
+
+        .webs__thumb .image {
+            width: 22em;
+        }
+
+        .fa-circle-arrow-left  {
+            left: 50px;
+            margin: 9.5em 0;
+        }
+    
+        .fa-circle-arrow-right {
+            position: absolute;
+            right: 50px;
+            margin: 9.5em 0;
+        }
+    }
+
+    /* GALLERY ------------ */
+
+    .photogallery-img {
+        width: 280px;
+    }
+
+    @media only screen and (max-width: 1290px) {
+
+        .photogallery {
+            width: 100%;
+        }
+    
+        .photogallery-img {
+            width: 250px;
+        }
+    }
+
+    @media only screen and (max-width: 1100px) {
+    
+        .photogallery-img {
+            width: 410px;
+        }
+
+        /* MY INSPIRATION ---------- */
+
+        .inspiration-container {
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .my-inspiration {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .inspiration__item {
+            justify-content: center;
+        }
+
+        .my-favs {
+            width: 95%;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .favs__text {
+            width: 90%;
+        }
+    }
+
+    /* INSPIRATION CONTAINER --------------- */
+
+    .inspiration__text {
+        font-size: 16px;
+    }
+
+    .inspiration__img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* CONTACT CONTAINER --------------------- */
+
+    .section-line {
+        width: 200px;
+    }
+
+    .contact-container {
+        width: 80%;
+    }
+}

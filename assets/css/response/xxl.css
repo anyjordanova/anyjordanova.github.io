@@ -1,0 +1,124 @@
+/* Extra large devices FHD+ (monitors, TVs) */
+@media only screen and (min-width: 1720px) {
+
+    /* ABOUT CONTAINER ------------------------ */
+
+    .about-container {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .about__skillbars {
+        width: 60%;
+    }
+
+    .about__hobbies {
+        width: 35%;
+    }
+
+    .hobby-circles {
+        width: 75%;
+        gap: 20px;
+    }
+
+    .about__img {
+        width: 250px;
+    }
+
+    .about__text {
+        width: 60%;
+    }
+
+    @media only screen and (min-width: 2220px) {
+
+        .hobby-circles {
+            width: 65%;
+            gap: 30px;
+        }
+    }
+
+    /* PROJECTS CONTAINER ------------------ */
+
+    .fa-circle-arrow-left  {
+        left: 100px;
+        margin: 17em 0;
+    }
+
+    .fa-circle-arrow-right {
+        right: 100px;
+        margin: 17em 0;
+    }
+
+    .webs__thumb .image {
+        width: 40em;
+    }
+
+    @media only screen and (min-width: 2300px) {
+        
+        .webs__thumb .image {
+            width: 50em;
+        }
+
+        .fa-circle-arrow-left  {
+            left: 200px;
+            margin: 21.2em 0;
+        }
+    
+        .fa-circle-arrow-right {
+            right: 200px;
+            margin: 21.2em 0;
+        }
+
+    }
+
+    /* GALLERY --------- */
+
+    .photogallery {
+        margin: 0 auto;
+    }
+
+    .photogallery-img {
+        width: 370px;
+    }
+
+    @media only screen and (min-width: 2000px) {
+
+    .photogallery {
+    gap: 20px;
+    }
+        
+    .photogallery-img {
+        width: 450px;
+    }
+
+    }
+
+    @media only screen and (min-width: 2400px) {
+
+        .photogallery {
+            gap: 25px;
+        }
+            
+        .photogallery-img {
+            width: 500px;
+        }
+    
+    }
+
+    /* INSPIRATION CONTAINER -------------- */
+
+    .inspiration-container {
+        justify-content: center;
+    }
+
+    .inspiration__text {
+        width: 70%;
+    }
+
+    /* MY FAVS ------- */
+
+    .favs-container {
+        gap: 50px;
+    }
+
+}

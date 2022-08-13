@@ -1,0 +1,170 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    /* HERO CONTAINER ----------------- */
+
+    /* NAV ---- */
+
+    .hero-nav__social, .vertical-line, .hero-nav__contact {
+        display: none;
+    }
+
+    .vertical-line {
+        margin-left: auto;
+    }
+
+    .hero-nav__menu {
+        margin: 0 20px 0 0;
+    }
+
+    .hero-nav__logo {
+        margin: 0 0 0 20px;
+    }
+    
+
+    /* HERO CONTENT ------ */
+
+    .hero-container {
+        justify-content: space-around;
+    }
+
+    .hero-content {
+        position: relative;
+        top: 30px;
+    }
+
+    .hero-img {
+        height: 70vh;
+        max-height: 400px;
+    }
+
+    .hero-content__title, .red-title {
+        font-size: 25px;
+    }
+
+    .hero-content__text {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .hero-content__contact {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero-content__btns {
+        justify-content: flex-start;
+        width: fit-content;
+        gap: 20px;
+        font-size: 15px;
+    }
+
+    /* ABOUT CONTAINER ----------------- */
+
+    .about-container {
+        width: 98%;
+    }
+
+    .about__text {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    /* SKILLBARS --------- */
+
+    .about__skillbars {
+        width: 100%;
+    }
+
+    .skillbar__title {
+        font-size: 15px;
+        width: 80px;
+    }
+
+    /* HOBBIES ------ */
+
+    .hobby-circles {
+        width: 100%;
+    }
+
+    /* PROJECTS CONTAINER ------------------- */
+
+    /* WEBS ---------- */
+
+    .projects__webs {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .webs__thumb .image {
+        width: 15em;
+    }
+
+    .fa-circle-arrow-left {
+        margin: 6.5em 0;
+        left: 30px;
+    }
+
+    .fa-circle-arrow-right {
+        margin: 6.5em 0;
+        right: 30px;
+    }
+
+    @media only screen and (min-width: 890px) and (max-width: 992px) {
+        
+        .webs__thumb .image {
+            width: 20em;
+        }
+
+        .fa-circle-arrow-left {
+            margin: 8.5em 0;
+            left: 50px;
+        }
+    
+        .fa-circle-arrow-right {
+            margin: 8.5em 0;
+            right: 50px;
+        }
+
+    }
+
+    /* GALLERY ------------- */
+
+    .photogallery-img {
+        width: 320px;
+    }
+
+    /* INSPIRATION CONTAINER ------------------ */
+
+    .inspiration-container {
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .inspiration__text {
+        width: 65%;
+    }
+
+    /* CONTACT CONTAINER -------------------- */
+
+    .contact-container {
+        width: 98%;
+    }
+
+    /* FOOTER --------------------------- */
+
+    .footer-container {
+        font-size: 14px;
+    }
+
+    .footer__logo {
+        width: 200px;
+    }
+
+    .footer-container--small {
+        font-size: 15px;
+    }
+
+}
