@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* 
+
+HEADER
+
+*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.397)), url(https://cdn.pixabay.com/photo/2015/05/09/15/42/book-759873_960_720.jpg);
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo {
+    text-align: center;
+    padding: 25px 0;
+    
+}
+
+.logo img {
+    width: 200px;
+    box-shadow: 0 0 40px black;
+}
+
+/* 
+
+NAV
+
+*/ 
+
+nav  {
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav div {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+
+nav div:hover {
+    color: rgb(195, 43, 173);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+/*
+
+MAIN
+
+*/
+
+main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    width: 70%;
+    margin: 20px 15%;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 1.5;
+    overflow: auto; 
+    padding: 20px;
+}
+
+.blog-post p {
+    padding: 5px 20px;
+    margin: 0 0 20px 0;
+}
+
+.blog-post h1 a {
+    text-decoration: none;
+    color: black;
+}
+.blog-post h1 a:hover {
+    color: rgb(195, 43, 173);
+    text-decoration: underline;
+}
+
+
+.blog-post-img {
+    height: 270px;
+    float: left;
+    margin-right: 10px;
+
+}
+
+.blog-post-btn {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid black;
+    margin: 30px;
+    font-weight: 400;
+    background-color: rgba(195, 43, 172, 0.74);
+}
+.blog-post-btn:hover {
+    background-color: rgb(245, 111, 173);
+    transition: 0.2s;
+}
+
+/* FLOAT */
+
+.blog-post-float {
+    float: left;
+    margin: 30px 2.5%;
+    width: 45%;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 1.5;
+    overflow: auto;
+    padding: 20px;
+}
+
+.blog-post-float p {
+    padding: 5px 20px;
+    margin: 0 0 20px 0;
+}
+
+.blog-post-float h1 a {
+    text-decoration: none;
+    color: black;
+}
+.blog-post-float h1 a:hover {
+    color: rgb(195, 43, 173);
+    text-decoration: underline;
+}
+
+/* CIK-CAK */
+
+.blog-post-img-left {
+    height: 270px;
+    float: left;
+    margin-right: 10px;
+}
+
+.blog-post-img-right {
+    height: 270px;
+    float: right;
+    margin: 10px;
+}
+/*
+
+FOOTER
+
+*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(195, 43, 172, 0.356);
+    clear: both;
+}
+
+/*
+
+MEDIA QUERRIES
+
+*/
+
+@media only screen and (max-width: 1150px) {
+    main {
+        width: 90%;
+    }
+
+    .blog-post-float {
+        width: 70%;
+        margin: 20px 15%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        width: 100%;
+    }
+
+    .blog-post {
+        width: 90%;
+        margin: 20px 5%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav div {
+        width: 100%;
+    }
+
+    .blog-post-img {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .blog-post-img-left, .blog-post-img-left {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .blog-post-img {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}

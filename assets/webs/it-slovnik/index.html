@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>IT slovník</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="main-nav__logo" src="./itlogo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#slovnik-gejmru">SLOVNÍK GEJMRŮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#slovnik-ajtaku">SLOVNÍK AJŤÁKŮ</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Hledat</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+        <section class="banner">
+            <p class=" banner__item--header">Připadáte si jako z jiné planety, když vám někdo řekně, že jste
+                <b>camper</b>, nebo ať <b>netrollíte</b> hru?
+            </p>
+            <p class="banner__item--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nemo, debitis
+                molestiae aut tenetur exercitationem unde illo? Nostrum ab, iste ad odit laborum tempora quisquam velit
+                placeat voluptatibus numquam deleniti.</p>
+            <a class=" banner__item--btn" href="#slovnik-gejmru">začínáme</a>
+        </section>
+    </div>
+
+    <div class="dic-container">
+        <div class="dic">
+            <p class="dic__header" id="slovnik-gejmru">slovník gejmrů</p>
+            <div class="line"></div>
+
+            <main class="dic__tabs">
+                <button class="tab__title" id="backstabbing">Backstabbing</button>
+                <div class="tab__content">
+                    <p>V překladu "vražení dýky do zad". Jedná se o mechaniku umožňující zákeřně rušit uzavřené dohody,
+                        napadat spojence apod. Je hojně využívaná u diplomatických a konfliktních her.</p>
+                </div>
+
+                <button class="tab__title" id="ban">Ban / banán</button>
+                <div class="tab__content">
+                    <p>Pojem ban u nás často uslyšíte ve spojení: „dostal jsem banána“. Namísto tropického ovoce však
+                        „obdarovaný“ nic nedostane a naopak mu je něco odebráno. Většinou jde o přístup do hry, jejíž
+                        autoři uznali, že se hráč nechová v rámci
+                        nastavených pravidel.</p>
+                    <img src="https://miro.medium.com/max/1200/0*gRwOld8y5XlD_QwA" alt="ban">
+                </div>
+
+                <button class="tab__title" id="boss">Boss</button>
+                <div class="tab__content">
+                    <p>Boss je zpravidla náročný protivník na konci úrovně či celé hry.
+                    </p>
+                    <img src="https://davescomputertips.com/wp-content/uploads/2019/12/god-of-war.jpg" alt="boss">
+                </div>
+
+                <button class="tab__title" id="bossfight">Bossfight</button>
+                <div class="tab__content">
+                    <p>Bossfight je utkání se s <a href="#boss">bossem</a>. V reálném životě může mít podobu například
+                        maturity či závěrečných zkoušek v autoškole.</p>
+                </div>
+
+                <button class="tab__title" id="bot">Bot</button>
+                <div class="tab__content">
+                    <p>Zkratka slova <i>robot</i>. Jedná se o složitý mechanismus hry, který se objevuje nejčastěji ve
+                        formě nepřátel (<a href="#enemy">enemáků</a>) / <a href="#boss">bossů</a>. Můžete se s nimi
+                        setkat jak v <a href="#singlePlayer">single player hře</a> (v podobě <a href="#npc">NPC</a>, <a
+                            href="enemy">enemies</a>..), tak i v <a href="#co-op">co-op herních modech</a> (např. v
+                        League of Legends, CS:GO..)
+                    </p>
+                </div>
+
+                <button class="tab__title" id="bug">Bug</button>
+                <div class="tab__content">
+                    <p>Znamená v překladu „brouk“ a jde o technickou chybu hry. Stejně jako jejich šestinohých
+                        příbuzných, i herních bugů existuje celá řada. Některých si sotva všimnete, jiné vám však dokáží
+                        kompletně zkazit zážitek z hraní. Zasáhnout pak
+                        musí vývojáři, kteří vydají opravné záplaty (tzv. patche). Ty v lepším případě otravné škůdce
+                        rozmáčknou, v tom horším však pouze stávající bugy překryjou novými.</p>
+                    <img src="https://i.imgur.com/W8LZpXf.jpg" alt="bug">
+                </div>
+
+                <button class="tab__title" id="camper">Camper</button>
+                <div class="tab__content">
+                    <p>Camper je typ hráče, který číhá natěsnaný v temném koutě a tiše čeká, až se před jeho muškou
+                        nachomýtnou nic netušící nebožáci. Zlaté časy těchto vyčuraných, ozbrojených táborníků přišel s
+                        nástupem žánru battle royale her - Fortnite,
+                        PUBG, Apex Legends atd.</p>
+                    <img src="http://marscampers.com.au/wp-content/uploads/Treasure-Hunt-e1508129431188.jpg"
+                        alt="camper">
+                </div>
+
+                <button class="tab__title" id="combo">Combo</button>
+                <div class="tab__content">
+                    <p>Herní mechanismus využívající zkombinování několika herních technik (např. různé styly boje) k
+                        větší síle a výhře nad soupeřem.</p>
+                </div>
+
+                <button class="tab__title" id="deathmatch">Deathmatch</button>
+                <div class="tab__content">
+                    <p>Herní mód, ve kterém vám jde o jediné - zneškodnit všechny protihráče a stát se vítězem.</p>
+                    <img src="https://tipsmake.com/data/thumbs/6-tips-to-play-team-deathmatch-pubg-mobile-thumb-sCgyUXI0d.jpg"
+                        alt="deathmatch">
+                </div>
+
+                <button class="tab__title" id="enemy">Enemy / enemák</button>
+                <div class="tab__content">
+                    <p>V překladu "nepřítel". Jedná se o každého, kdo je na straně proti vám. Ať už hráč, nebo třeba <a
+                            href="#bot">boti</a>.</p>
+                </div>
+
+                <button class="tab__title" id="esport">eSport</button>
+                <div class="tab__content">
+                    <p>Každodenní tréninky, pot, profesionální ligy ba dokonce i spoře oděné hostesky. Tím se nechlubí
+                        jen klasické sporty jako fotbal nebo atletika, i videohry totiž mají své turnaje a ligové
+                        soutěže. Zatím jsme to sice nedotáhli na Olympiádu,
+                        ale i to je v jednání.</p>
+                    <img src="https://s14.gonet.tv/api/obr/skupina_ebf4779ea70473c2d3847b3fba115da8-960.jpg"
+                        alt="esport">
+                </div>
+
+                <button class="tab__title" id="farmit">Farmit</button>
+                <div class="tab__content">
+                    <p>Farmení kupodivu nemá nic společného se zemědělskými tituly jako je Farming Simulator. Jde o
+                        proces, kdy většinou opakováním stejnorodé činnosti hráč získává potřebnou komoditu, aby si mohl
+                        kupříkladu vylepšit brnění. Něco jako když
+                        každý den chodíte do práce.
+                    </p>
+                </div>
+
+                <button class="tab__title" id="gameOver">Game over</button>
+                <div class="tab__content">
+                    <p>Je mi líto, ale je konec. Už to nejde dál. Došly vám životy. Nevyšlo to. Nemáte další tahy. Hra
+                        skončila. Jediné, co vám teď zbývá, je nahrát poslední uloženou pozici, případně začít znovu od
+                        začátku. Upřímnou soustrast.
+                    </p>
+                    <img src="https://art.pixilart.com/9990432bcd1a350.png" alt="game over">
+                </div>
+
+                <button class="tab__title" id="hardcoreHra">Hardcore / HC hra</button>
+                <div class="tab__content">
+                    <p>Označení pro komplexní a obtížné hry, často s dlouhou herní dobou a složitými pravidly.
+                    </p>
+                </div>
+
+                <button class="tab__title" id="headshot">Headshot</button>
+                <div class="tab__content">
+                    <p>Jak to, že mě dostal na jednu ránu, sakra?! Je mi líto, ale úmrtní zpráva hovoří jasně. Dostali
+                        jste zásah do hlavy, tedy headshot, jež dává nesrovnatelně silnější poškození než zásah do těla
+                        a v jedné vteřině ničí veškeré ambice na
+                        vítězství.
+                    </p>
+                    <img src="https://game-tournaments.com/media/tournament/e1355.jpeg" alt="headshot">
+                </div>
+
+                <button class="tab__title" id="cheater">Cheater</button>
+                <div class="tab__content">
+                    <p>Anglicky cheater, německy unterwasserman, česky podvodník. Cheater je hráč, který při hraní
+                        podvádí a získává tak výhodu nad ostatními tím, že ohýbá autory nastavená pravidla. Může jít
+                        také o křivé nařčení v momentě, kdy se vám opravdu
+                        hodně daří.
+                    </p>
+                </div>
+
+                <button class="tab__title" id="kompet">Kompetetivní hra / kompet</button>
+                <div class="tab__content">
+                    <p>Nejčastější typ hry, při jejímž hraní mezi sebou hráči soutěží o vítězství.</p>
+                </div>
+
+                <button class="tab__title" id="co-op">Kooperativní hra / CO-OP</button>
+                <div class="tab__content">
+                    <p>Hráči nesoupeří mezi sebou, naopak spolupracují proti týmu <a href="#bot">botů</a>.</p>
+                </div>
+
+                <button class="tab__title" id="lag">Lag</button>
+                <div class="tab__content">
+                    <p>Citelná prodleva mezi akcí hráče a odezvou serveru, na kterém běží daná hra. Prostě kliknete
+                        myší, ale výstřel přijde až o vteřinu později. Nic příjemného, pro spoustu hráčů je to ale i
+                        univerzální omluva vlastních nezdarů. <i>"Za všechno může lag."</i>
+                    </p>
+                    <img src="https://www.esquireme.com/cloud/2021/09/08/Lag-affecting-ps-and-xbox-because-of-cornavirus.jpg"
+                        alt="">
+                </div>
+
+                <button class="tab__title" id="lama">Lama</button>
+                <div class="tab__content">
+                    <p>Lama je sice nadávka, avšak ne tak ostrá jako třeba tur domácí. V rámci světa videoher jsou takto
+                        označování hráči, kteří stále hrají jeden titul, ale jsou v něm neuvěřitelně špatní. Něco jako
+                        když desetkrát po sobě neuděláte autoškolu.</p>
+                    <img src="https://www.mujchlupac.cz/wp-content/uploads/lama-portret.jpg" alt="">
+                </div>
+
+                <button class="tab__title" id="loot">Loot</button>
+                <div class="tab__content">
+                    <p>Loot je hnacím motorem spousty her. Neustálé vraždění nepřátel v naději, že z nich vypadne lepší
+                        zbraň/brnění/výbava/kouzlo či více zlata je ten důvod, proč se zpětně podíváte na ty stovky
+                        hodin strávených ve hře a řeknete si: „Ničeho
+                        nelootuju.”</p>
+                    <img src="https://www.vortex.cz/wp-content/uploads/2019/08/acastro_190206_32221_lootboxes_gambling_0001.0-1260x710.jpg"
+                        alt="">
+                </div>
+
+                <button class="tab__title" id="mikrotransakce">Mikrotransakce</button>
+                <div class="tab__content">
+                    <p>Způsob, jak dotovat hru po jejím nákupu. Za zanedbatelné částky nakupujete (v lepším případě)
+                        kosmetické úpravy postavy a zbraní, aby se vám vaše postava opravdu líbila. Početné nevysoké
+                        investice se ovšem negativně projeví na měsíčním
+                        vyúčtování z vaší banky.
+                    </p>
+                </div>
+
+                <button class="tab__title" id="multiPlayer">Multi player</button>
+                <div class="tab__content">
+                    <p>Jak již název napovídá, jedná se o hry pro více hráčů.
+                    </p>
+                    <img src="https://lootandgrind.com/wp-content/uploads/2021/06/multiplayer-games-cod-header.jpg"
+                        alt="">
+                </div>
+
+                <button class="tab__title" id="nerf">Nerf</button>
+                <div class="tab__content">
+                    <p>Máte oblíbenou zbraň či hrdinu, který je prokazatelně silnější než ostatní a ničí tak rovnováhu
+                        celé hry? Tak si ho užívejte, dokud můžete, protože jej tvůrci nejspíš velmi brzy „nerfnou”,
+                        tedy výrazně sníží jeho sílu v zájmu vyvážení
+                        hratelnosti.</p>
+                </div>
+
+                <button class="tab__title" id="noob">Noob</button>
+                <div class="tab__content">
+                    <p>Nerozkoukaný nováček. Vyjukaný začátečník, z něhož si všichni ostatní utahují a dělají si z něj
+                        cvičný terč. Nikde není napsáno, že se z otloukánka nestane mistr oboru, ale často jej veteráni
+                        svou šikanou tak znechutí, že nad titulem
+                        zlomí hůl.</p>
+                </div>
+
+                <button class="tab__title" id="npc">NPC </button>
+                <div class="tab__content">
+                    <p>Zkratka pro sousloví <i>non-playable character</i>. Jsou to doslova postavy, za které nemůžete
+                        hrát. Můžete na ně narazit v každé <a href="#singlePlayer">single player</a> hře. Většinou jsou
+                        v podobě neškodných postav (vesničan, sedlák,
+                        král..), ale jsou důležití pro rozvoj celého příběhu hry.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/NPC_wojak_meme.png" alt="">
+                </div>
+
+                <button class="tab__title" id="ping">Ping</button>
+                <div class="tab__content">
+                    <p>Jedná se o časovou prodlevu v době uplynulou mezi akcí a reakcí (např. čas mezi stlačením
+                        tlačítka myši a výstřelem ze zbraně, který mělo způsobit právě kliknutí). Měří se v
+                        milisekundách. Spolu s <a href="#lag">lagem</a> se jedná
+                        o jednu z nejčastějších výmluv hráčských nezdarů. <i>"Mám ping 60, s
+                            takovým pingem nemám šanci nikoho trefit!"</i></p>
+                </div>
+
+                <button class="tab__title" id="respawn">Respawn</button>
+                <div class="tab__content">
+                    <p>Z anglického spawn („zrodit“), respawnout se znamená opět se vrátit do hry živý a zdravý po vaší
+                        virtuální smrti např. v onlinovém zápase. </p>
+                </div>
+
+                <button class="tab__title" id="singlePlayer">Single player</button>
+                <div class="tab__content">
+                    <p>Jedná se o hry, které může hrát pouze jeden hráč. Celou hru doprovází zajímavý příběh, spousta <a
+                            href="#npc">NPC</a> a <a href="#boss">bossů..</a>
+                    </p>
+                </div>
+
+                <button class="tab__title" id="spawnPoint">Spawn point</button>
+                <div class="tab__content">
+                    <p>Spawnovat a <a href="#respawn">respawnovat</a> se mohou i nepřátelé ovládáni umělou inteligencí.
+                        Místům, na kterých k téhle nepleše dochází se právě nazývají spawn pointy.</p>
+                </div>
+
+                <button class="tab__title" id="troll">Troll</button>
+                <div class="tab__content">
+                    <p>Trollové jsou věčnou součástí itinerářů internetových diskusí, i ve světě videoher je však
+                        najdeme. Většinou se pokouší znepříjemnit hraní ostatním hráčům stupidním chováním, z čehož
+                        pramení označení ukazující na jejich průměrnou až
+                        podprůměrnou inteligenci.</p>
+                </div>
+
+                <button class="tab__title" id="wargame">Wargame</button>
+                <div class="tab__content">
+                    <p>V překladu "válečná hra". Jedná se o druh her, kde jde o co nejvěrnější zpracování válečných
+                        konfliktů, proto často mívá velmi obsáhlá pravidla. (např. World of Tanks, War Thunder, God of
+                        War...)</p>
+                </div>
+            </main>
+
+            <p class="dic__header" id="slovnik-ajtaku">slovník ajťáků</p>
+            <div class="line"></div>
+
+            <main class="dic__tabs">
+
+                <button class="tab__title" id="antivir">Antivir</button>
+                <div class="tab__content">
+                    <p>Program pro odstranění škodlivých <a href="software">softwarů</a>.</p>
+                </div>
+
+                <button class="tab__title" id="bluetooth">Bluetooth</button>
+                <div class="tab__content">
+                    Taktéž ajťácky nazýván <i>"modrozub"</i>. Jedná se o bezdrátové radiové rozhraní pro přenos médií
+                    (hudba, fotky, videa, textové soubory..). V dnešní době je Bluetooth základní výbavou každého
+                    chytrého mobilního telefonu.
+                    <p></p>
+                </div>
+
+                <button class="tab__title" id="cpu">CPU / procesor</button>
+                <div class="tab__content">
+                    <p>Ajťácky také <i>"procák, cépéúčko"</i>. Provádí instrukce, které uživatel zadá. Ať už se jedná o
+                        stisknutí tlačítka či pohybu myši, všechny operace v PC se uskutečňují díky procesoru. Hlavní
+                        výrobci jsou AMD a Intel.
+
+                    </p>
+                </div>
+
+                <button class="tab__title" id="databaze">Databáze</button>
+                <div class="tab__content">
+                    <p>Jedná se o kolekci informací v určitém formátu umožňující práci s uloženými informacemi, nejen
+                        základní: vkládání, mazání, úpravy, ale také složité operace: početní úkony, podmínky, výběry,
+                        statistiky, řazení dle kritérií a další.
+                        Informace lze poté aplikovat do prezentací, informačních portálů atd.Nejznámější používané
+                        databáze jsou: <b> MySQL, MS SSQL, PostgreSQL a MS Access</b>.</p>
+                </div>
+
+                <button class="tab__title" id="dns">DNS</button>
+                <div class="tab__content">
+                    <p>Zkratka pro <i>Domain Name System</i>. DNS přiřazuje k číselné <a href="#ip">IP adrese</a> tzv.
+                        doménové jméno, které si uživatelé snadno zapamatují a často jej dokáží intuitivně napsat
+                        například do webového prohlížeče
+                    </p>
+                </div>
+
+                <button class="tab__title" id="e-mail">E-mail</button>
+                <div class="tab__content">
+                    <p>E-mail je elektronická pošta typu pohlednice. Nezasíláte-li ho šifrovaně, kdokoliv po cestě k
+                        adresátovi ho může zachytit a přečíst.</p>
+                </div>
+
+                <button class="tab__title" id="firewall">Firewall</button>
+                <div class="tab__content">
+                    <p>Firewall je zařízení, které chrání uživatele, kanceláře, firmy a společnosti před interními i
+                        externími bezpečnostními incidenty. Pod definovanými pravidly omezuje uživatelům a aplikacím
+                        přístup do sítě. Různé firewally poskytují různou
+                        administrátorskou přívětivost a úrovně ochrany. </p>
+                </div>
+
+                <button class="tab__title" id="gpu">GPU / grafická karta</button>
+                <div class="tab__content">
+                    <p>Ajťácky <i>"grafika, grafárna, gépéúčko"</i>. Zajišťuje grafické výpočty a zobrazuje je na
+                        monitor. V počítači se nachází buď jako samostatný prvek na <a href="#zakladniDeska">základní
+                            desce</a>, nebo ji můžeme nalézt integrovanou
+                        v <a href="#cpu">procesoru</a>.</p>
+                </div>
+
+                <button class="tab__title" id="internet">Internet</button>
+                <div class="tab__content">
+                    <p>Internet je celosvětovým elektronickým propojením počítačových sítí s cílem umožnit spojení mezi
+                        jednotlivými počítači a výměnu dat. V principu je možné propojit každý počítač s každým jiným
+                        počítačem na světě.
+                    </p>
+                </div>
+
+                <button class="tab__title" id="ip">IP adresa</button>
+                <div class="tab__content">
+                    <p>Slouží k identifikaci v síti. Každý počítač, který se připojí do sítě dostane adresu. Díky tomu
+                        může síťový prvek identifikovat jednotlivé zařízení. Existují veřejné a neveřejné IP adresy.</p>
+                </div>
+
+                <button class="tab__title" id="lan">LAN</button>
+                <div class="tab__content">
+                    <p>Zkratka pro <i>Local Area Network</i>. LAN jsou lokální sítě propojující koncové uzly (typu
+                        počítač, tiskárna, server) v rámci jedné budovy nebo několika blízkých budov a při použití
+                        optiky na vzdálenosti stovek metrů až kilometrů.
+                        LAN jsou vždy v soukromé správě a působí na malém území. </p>
+                </div>
+
+                <button class="tab__title" id="operacniSystem">Operační systém / OS</button>
+                <div class="tab__content">
+                    <p>Operační systém je v informatice základní programové vybavení počítače (tj. software), které je
+                        zavedeno do paměti počítače při jeho startu a zůstává v činnosti až do jeho vypnutí. Skládá se z
+                        jádra (kernel) a pomocných systémových
+                        nástrojů. Hlavním úkolem operačního systému je zajistit uživateli možnost ovládat počítač.
+                        Nejznámějšími operačními systémy jsou: <b>Windows, MacOC, Linux</b>.</p>
+                </div>
+
+                <button class="tab__title" id="seo">SEO</button>
+                <div class="tab__content">
+                    <p>Zkratka pro <i>search engine optimization</i>. Jsou to techniky potřebné k dosažení vysokých
+                        výsledků ve vyhledávačích (Google, Seznam, Bing) na požadovaná klíčová slova. Pro úspěšnou
+                        optimalizaci pro vyhledávače v zásadě platí držet
+                        se obecných doporučení od Googlu a Seznamu a nepodvádět.</p>
+                </div>
+
+                <button class="tab__title" id="server">Server</button>
+                <div class="tab__content">
+                    <p>Server je označení pro počítač, který sdílí své prostředky s jinými počítači (klienty) v
+                        počítačové síti a poskytuje jim určité služby. Např. webový server, samba server, ftp server,
+                        herní server atp. Servery bývají umístěné v serverovnách
+                        a mohou se zakládat do speciálních skříní, tzv. racků.</p>
+                </div>
+
+                <button class="tab__title" id="serverhosting">Serverhosting</button>
+                <div class="tab__content">
+                    <p>Serverhosting je služba pronájmu či umístění <a href="#server">počítačového serveru</a> v
+                        prostorách poskytovatele s připojením serveru do sítě <a href="#internet">internet</a>.</p>
+                </div>
+
+                <button class="tab__title" id="terminal">Terminál</button>
+                <div class="tab__content">
+                    <p>Vytváří uživatelské rozhraní. Terminál se u běžných uživatelů nepoužívá, protože většina <a
+                            href="#operacniSystem">OS</a> funguje díky grafickému uživatelskému prostředí. Člověk tedy
+                        nepotřebuje vůbec vyhledávat terminál, neboť většina
+                        procesu se díky aplikacím odehrává na pozadí. Pokud chceme pracovat s terminálem jsou vhodné
+                        systémy, které běží na jádře Linux.</p>
+                </div>
+
+                <button class="tab__title" id="vpn">VPN</button>
+                <div class="tab__content">
+                    <p>Zkratka pro <i>"virtual private network"</i>. Virtuální privátní síť je prostředek k propojení
+                        několika počítačů prostřednictvím veřejné počítačové sítě. Počítače budou mezi sebou moci
+                        komunikovat, jako kdyby byly propojeny v rámci
+                        jediné uzavřené privátní sítě. Veškerá komunikace je šifrována, a proto můžeme VPN připojení
+                        považovat za bezpečné.</p>
+                </div>
+
+                <button class="tab__title" id="webDeveloper">Web developer</button>
+                <div class="tab__content">
+                    <p>Webdeveloper je pracovní název pro vývojáře webů. Vývojář by měl ovládat programovací jazyky jako
+                        jsou: HTML, CSS, Javascript a PHP nebo ASP.NET.</p>
+                </div>
+
+                <button class="tab__title" id="webhosting">Webhosting</button>
+                <div class="tab__content">
+                    <p>Webhosting je umístění webových stránek a dalších služeb (e-maily, FTP, statistiky, atd.) na
+                        určitém <a href="#server">serveru</a> a jejich zpřístupnění všem uživatelům internetu. Na toto
+                        místo je pak pomocí tzv. <a href="#dns">DNS</a> serverů přesměrovávána příslušná doména.</p>
+                </div>
+
+                <button class="tab__title" id="wifi">WiFi</button>
+                <div class="tab__content">
+                    <p>WiFi je technologie pro přenos dat o ve frekvencích 2,4GHz a 5GHz. Pásmo WiFi lze provozovat
+                        zcela zdarma za dodržení daných podmínek a hodnoty vyzářeného výkonu.</p>
+                </div>
+
+                <button class="tab__title" id="wlan">WLAN</button>
+                <div class="tab__content">
+                    <p>Zkratka pro sousloví <i>Wireless Local Area Network"</i>. WLAN je bezdrátová <a
+                            href="#lan">místní
+                            počítačová síť</a>. K realizaci WLANu se používá nejčastěji technologie <a
+                            href="#wifi">WiFi</a>.</p>
+                </div>
+
+                <button class="tab__title" id="zakladniDeska">Základní deska</button>
+                <div class="tab__content">
+                    <p>Též nazývána <i>"motherboard"</i>. Je to deska osazená konektory pro <a href="#cpu">procesor</a>
+                        a další komponenty připojované buď přímým zasunutím do konektoru nebo připojené pomocí plochého
+                        kabelu. Přímo na základní desce jsou integrovány
+                        obvody vnější vyrovnávací paměti (tzv. cache) procesoru, dále elektronické obvody pro řízení
+                        sběrnic, řadiče pro připojení pevných disků, optických mechanik nebo jiného zařízení sloužícího
+                        ke čtení, zápisu nebo skladování dat.
+                    </p>
+                </div>
+            </main>
+        </div>
+
+        <aside class="sidebar">
+            <p class="dic__header">obsah</p>
+            <div class="line--sidebar"></div>
+
+            <div class="sidebar__nav">
+                <a href="#slovnik-gejmru" class="sidebar__nav--title">slovník gejmrů</a>
+                <ul class="sidebar__nav--content">
+                    <li><a href="#backstabbing">Backstabbing</a></li>
+                    <li><a href="#ban">Ban / banán</a></li>
+                    <li><a href="#boss">Boss</a></li>
+                    <li><a href="#bossfight">Bossfight</a></li>
+                    <li><a href="#bot">Bot</a></li>
+                    <li><a href="#bug">Bug</a></li>
+                    <li><a href="#camper">Camper</a></li>
+                    <li><a href="#combo">Combo</a></li>
+                    <li><a href="#deathmatch">Deathmatch</a></li>
+                    <li><a href="#enemy">Enemy / enemák</a></li>
+                    <li><a href="#esport">eSport</a></li>
+                    <li><a href="#farmit">Farmit</a></li>
+                    <li><a href="#gameOver">Game Over</a></li>
+                    <li><a href="#hardcoreHra">Hardcore / HC hra</a></li>
+                    <li><a href="#headshot">Headshot</a></li>
+                    <li><a href="#cheater">Cheater</a></li>
+                    <li><a href="#kompet">Kompetetivní hra / kompet</a></li>
+                    <li><a href="#co-op">Kooperativní hra / CO-OP</a></li>
+                    <li><a href="#lag">Lag</a></li>
+                    <li><a href="#lama">Lama</a></li>
+                    <li><a href="#loot">Loot</a></li>
+                    <li><a href="#mikrotransakce">Mikrotransakce</a></li>
+                    <li><a href="#multiPlayer">Multi player</a></li>
+                    <li><a href="#nerf">Nerf</a></li>
+                    <li><a href="#noob">Noob</a></li>
+                    <li><a href="#npc">NPC</a></li>
+                    <li><a href="#ping">Ping</a></li>
+                    <li><a href="#respawn">Respawn</a></li>
+                    <li><a href="#singlePlayer">Single Player</a></li>
+                    <li><a href="#spawnPoint">Spawn point</a></li>
+                    <li><a href="#troll">Troll</a></li>
+                    <li><a href="#wargame">Wargame</a></li>
+                </ul>
+
+                <a href="#slovnik-ajtaku" class="sidebar__nav--title">slovník ajťáků</a>
+                <ul class="sidebar__nav--content">
+                    <li><a href="#antivir">Antivir</a></li>
+                    <li><a href="#bluetooth">Bluetooth</a></li>
+                    <li><a href="#cpu">CPU / Procesor</a></li>
+                    <li><a href="#databaze">Databáze</a></li>
+                    <li><a href="#dns">DNS</a></li>
+                    <li><a href="#e-mail">E-mail</a></li>
+                    <li><a href="#firewall">Firewall</a></li>
+                    <li><a href="#gpu">GPU</a></li>
+                    <li><a href="#internet">Internet</a></li>
+                    <li><a href="#ip">IP adresa</a></li>
+                    <li><a href="#lan">LAN</a></li>
+                    <li><a href="#operacniSystem">Operační systém / OS</a></li>
+                    <li><a href="#seo">SEO</a></li>
+                    <li><a href="#server">Server</a></li>
+                    <li><a href="#serverhosting">Serverhosting</a></li>
+                    <li><a href="#terminal">Terminál</a></li>
+                    <li><a href="#vpn">VPN</a></li>
+                    <li><a href="#webDeveloper">Web developer</a></li>
+                    <li><a href="#webhosting">Webhosting</a></li>
+                    <li><a href="#wifi">WiFi</a></li>
+                    <li><a href="#wlan">WLAN</a></li>
+                    <li><a href="#zakladniDeska">Základní deska</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer__text">
+            <p>Made with <span style="color: blueviolet;">&hearts;</span> by <a href="https://instagram.com/dzordys"
+                    target="_blank">džordys</a>.</p>
+            <p>&copy; 2022 | <a href="https://creativehill.cz" target="_blank">Creative Hill College Zlín</a></p>
+        </div>
+    </footer>
+
+    <script src="tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

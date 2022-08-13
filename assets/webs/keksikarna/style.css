@@ -1,0 +1,541 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    -drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*FONTS------------------------------------------------*/
+@font-face {
+    font-family: 'DK Frozen Memory';
+    src: url(./fonts/DK\ Frozen\ Memory.otf);
+}
+
+@font-face {
+    font-family: 'Kid Games';
+    src: url(./fonts/Kid\ Games.ttf);
+}
+
+/*HERO PAGE-----------------------------------------------------*/
+
+.hero-page-container {
+    background-image: url(./photo/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.arrow {
+    position: absolute;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    bottom: 10px;
+    left: 49%;
+}
+
+.arrow a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    5% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*NAV-------------------*/
+
+.hero-page__nav {
+ width: 100%;
+ padding: 5px 80px 5px 0;
+ background-color: #272727ce;
+ text-align: right;
+ font-weight: 500;
+ position: fixed;
+ z-index: 1;
+box-shadow: 0 0  10px #000000a6;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px;
+}
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-item--pink {
+    background: #EAB2D9;
+    border-radius: 20px;
+    display: inline-block;
+    margin: auto 2px;
+    font-size: 18px;
+    padding: 8px;
+    border: 2px solid #EAB2D9;
+}
+.nav-item--pink:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    transition: all .3s ease;
+}
+
+.nav-item--pink a {
+    color: #272727;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 12px;
+}
+.nav-item--pink a:hover  {
+    color: #fff;
+}
+
+/*HERO TEXT-----------------*/
+
+.hero-text {
+    width: 100%;
+    margin: 35vh auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+}
+
+.hero-text__title {
+   font-family: 'DK Frozen Memory';
+   font-size: 100px;
+}
+
+.hero-text__subtitle {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*SOCIAL-------------------*/
+
+.hero-page__social {
+    list-style-type: none;
+    display: block;
+    width: max-content;
+    padding: 36vh 20px;
+    height: 100vh;
+    position: absolute;
+}
+
+.hero-page__social img {
+    width: 30px;
+    margin: 2px 0;
+}
+
+/*ABOUT US------------------------------------------------------*/
+
+.about-container {
+    height: fit-content;
+    background: #272727;
+}
+
+.about__title {
+    width: 70%;
+    margin: 0 auto;
+    padding: 80px 0 50px 0;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.about__title span {
+    font-family: 'DK Frozen Memory';
+    font-size: 60px;
+    color: #EAB2D9;
+}
+
+.about__line {
+    height: 1px;
+    width: 40%;
+    margin: 0 auto;
+    background: #EAB2D9;
+    border: 1px solid #EAB2D9;
+}
+
+.info__text {
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*COUNT---------------------*/
+
+.about__count {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about__count .title {
+    font-family: 'DK Frozen Memory', sans-serif;
+    font-size: 60px;
+    color: #EAB2D9;
+}
+
+.about__count .title span {
+    font-family: 'Kid Games';
+}
+
+.about__count .subtitle {
+    color: #fff;
+    font-size: 20px;
+}
+
+/*SKILLBAR------------------*/
+
+.about__skillbar {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bar {
+    background-color: #474747;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.skill {
+    background-color: #EAB2D9;
+    border-radius: 20px;
+    padding: 8px;
+    width: 95%;
+    text-align: right;
+    animation: skill 1s ease-out;
+}
+
+@keyframes skill {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+/*MENU----------------------------------------------------------*/
+
+.menu-container {
+    height: fit-content;
+    background: #272727;
+}
+
+.container__title {
+    width: 70%;
+    margin: 0 auto;
+    padding: 80px 0 20px 0;
+    text-align: center;
+    font-size: 60px;
+    color: #EAB2D9;
+    font-family: 'DK Frozen Memory';
+}
+
+.menu__nav {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #EAB2D9;
+}
+
+.menu__nav li {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 30px;
+}
+
+.menu__nav .active-nav, .menu__nav li:hover {
+    background-color: #EAB2D9;
+    color: #272727;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: color .5s;
+
+}
+
+/*PRODUCTS--------------------------*/
+
+.menu__products {
+    width: 80%; 
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products-item {
+    background-color: #DDD1DC;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.products-item__img {
+    width: 50%;
+    margin: 10px 25%;
+}
+
+.products-item__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 20px;
+}
+
+.products-item__text {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0px 20px 10px 20px;
+}
+
+.products-item__price {
+    font-family: 'DK Frozen Memory', sans-serif;
+    margin-left: 20px;
+    font-size: 35px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.products-item__price span {
+    font-family: 'Kid Games', sans-serif;
+}
+
+.products-item__btn {
+    color: white;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 0px 0 95px;
+    font-weight: 500;
+}
+.products-item__btn:hover {
+    color: black;
+    background-color: #DDD1DC;
+    transition: .3s;
+}
+
+.menu__btn-container {
+    width: 100%;
+    margin: 0;
+}
+
+.menu__products--btn {
+    background-color: #EAB2D9;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #EAB2D9;
+    padding: 10px 35px 10px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    width: 100px;
+    margin: 0 auto;
+}
+.menu__products--btn:hover {
+    color: white;
+    background-color: #272727;
+    transition: .3s;
+}
+
+.menu__products--btn span {
+    position: absolute;
+    background-color: #272727;
+    border-radius: 50px;
+    color: #fff;
+    margin: 3px 5px 3px 50px;
+    font-size: 20px;
+}
+
+/*CONTACT--------------------------------------------------------*/
+
+.contact-container {
+    height: fit-content;
+    background-color: #272727;
+}
+
+/*OPENING-----------------*/
+
+.contact__opening {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact__opening--days {
+    font-size: 25px;
+    color: #EAB2D9;
+    font-family: "DK Frozen Memory", sans-serif;
+    text-align: right;
+}
+
+.contact__opening--hours {
+    color: #fff;
+}
+
+.contact__opening--hours p {
+    margin: 6px 0 13px 0;
+}
+
+.vl {
+    border-left: 3px solid #EAB2D9;
+    
+}
+
+/*CONTACT FORM------------------------*/
+
+.contact__form {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.contact__form p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact__form input[type="text"], .contact__form input[type="email"], .contact__form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #272727;
+    border: none;
+    border-bottom: 1px solid #EAB2D9;
+    color: #f8d5ed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact__form input[type="text"]:focus, .contact__form input[type="email"]:focus, .contact__form textarea:focus {
+    color:  #fff;
+    outline: none !important;
+    border: 1px solid #272727;
+    box-shadow: 0 0 10px #eab2d950;
+}
+
+.contact__form input[type="submit"] {
+    background: #EAB2D9;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid #EAB2D9;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact__form input[type="submit"]:hover {
+    color: white;
+    background: #272727;
+    transition: .3s;
+}
+
+/*FOOTER---------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #474747;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer__logo {
+    width: 100px;
+    height: 100px;
+}
+
+.footer__title {
+    font-family: "DK Frozen Memory", sans-serif;
+    color: #EAB2D9;
+    font-size: 25px;
+}
+
+.footer__contact--text {
+    color: #fff;
+}
+
+.footer__social--icons {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.footer__social--icons img {
+    width: 30px;
+    margin: 0 10px;
+}
