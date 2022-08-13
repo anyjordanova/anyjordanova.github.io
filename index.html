@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/fa/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/imgs/logo1.png">
+    <link rel="icon" href="./assets/imgs/icon.png">
+    <!-- response -->
+    <link rel="stylesheet" href="./assets/css/response/xxl.css">
+    <link rel="stylesheet" href="./assets/css/response/xl.css">
+    <link rel="stylesheet" href="./assets/css/response/l.css">
+    <link rel="stylesheet" href="./assets/css/response/m.css">
+    <link rel="stylesheet" href="./assets/css/response/s.css">
+    <link rel="stylesheet" href="./assets/css/response/xs.css">
+
+    <title>džordys | osobní portfolio</title>
+</head>
+
+<body>
+
+    <div id="js-topButton" onclick="topFunction()">
+        <i class="fas fa-circle-arrow-up fa-lg"></i>
+    </div>
+
+    <nav class="hero-nav" id="navbar">
+        <img class="hero-nav__logo" src=".//assets/imgs/logo.png" height="50px" alt="">
+        <nav class="hero-nav__menu">
+            <li><a class="menu-item active" href="#domu">Domů</a></li>
+            <li><a class="menu-item" href="#omne">O mně</a></li>
+            <li><a class="menu-item" href="#projekty">Projekty</a></li>
+            <li><a class="menu-item" href="#moje-inspirace">Moje inspirace</a></li>
+            <li><a class="menu-item" href="#kontakt">Kontakt</a></li>
+        </nav>
+
+        <span class="hamburger-icon" onclick="openNav()">&#9776;</span>
+
+        <nav class="hero-nav__social">
+            <li><a href="https://github.com/anyjordanova" target="_blank"><i class="fab fa-github"
+                        style="color: black;"></i></a></li>
+            <li><a href="https://www.behance.net/anezkajordnov" target="_blank"><i class="fab fa-behance"
+                        style="color: black;"></i></a></li>
+            <li><a href="https://www.facebook.com/anezka.jordanova/" target="_blank"><i class="fab fa-facebook"
+                        style="color: black;"></i></a></li>
+            <li><a href="https://www.instagram.com/dzordys/" target="_blank"><i class="fab fa-instagram"
+                        style="color: black;"></i></a></li>
+        </nav>
+        <div class="vertical-line"></div>
+        <a href="#kontakt" class="hero-nav__contact">Napište mi</a>
+    </nav>
+
+    <nav id="myNav" class="hero-nav--responsive">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="hero-nav__content--responsive">
+            <a href="#omne">O mně</a>
+            <a href="#projekty">Projekty</a>
+            <a href="#moje-inspirace">Moje inspirace</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+    </nav>
+
+    <section class="hero-page" id="domu">
+        <header class="hero-container">
+            <div class="hero-content">
+                <div class="hero-content__title cascadia">
+                    <p>Ahoj! Říkají mi džordys</p>
+                    <p class="red-title">- Webdev & webdesigner</p>
+                </div>
+                <p class="hero-content__text">Jsem studentka kreativní střední školy sedící 24/7 za obrazovkou, tvořící
+                    s láskou originální weby a digitální čmáranice. Občas sáhnu i po zrcadlovce a kochám se světem
+                    spatřeným v hledáčku.</p>
+                <div class="hero-content__contact">
+                    <div class="contact-item">
+                        <p class="contact-title cascadia">E-mail:</p>
+                        <p class="contact-text">anezka.jordanova@gmail.com</p>
+                    </div>
+                    <div class="vertical-line contact-item"></div>
+                    <div class="contact-item">
+                        <p class="contact-title cascadia">GitHub:</p>
+                        <a class="contact-text" href="https://github.com/anyjordanova" target="_blank">github.com/anyjordanova
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-content__btns">
+                    <a href="#omne" class="hero-content__btns--solid">Více o mně</a>
+                    <a href="#projekty" class="hero-content__btns--outlined">Moje projekty</a>
+                </div>
+            </div>
+
+            <div class="hero-content--responsive">
+                <div class="hero-content__contact--responsive">
+                    <div class="contact-item">
+                        <p class="contact-title cascadia">E-mail:</p>
+                        <p class="contact-text">anezka.jordanova@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-title cascadia">GitHub:</p>
+                        <a class="contact-text" href="https://github.com/anyjordanova">github.com/anyjordanova
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-content__btns--responsive">
+                    <a href="#omne" class="hero-content__btns--solid">Více o mně</a>
+                    <a href="#projekty" class="hero-content__btns--outlined">Moje projekty</a>
+                </div>
+            </div>
+
+            <img src="./assets/imgs/me.png" alt="" class="hero-img">
+        </header>
+    </section>
+
+    <section class="about-container" id="omne">
+        <div class="about__text">
+            <p class="section-title cascadia">o mně</p>
+            <hr class="section-line">
+            </hr>
+            <p>Jmenuji se <b>Anežka Jordánová</b>, jsem studentkou filmové a multimediální střední školy <a href="https://creativehill.cz/" target="_blank"
+                    class="link cascadia">Creative Hill College</a> ve Zlíně a mým konkrétním zaměřením je
+                <b>vývoj multimediálních aplikací a her</b>.
+            </p>
+            <br>
+            <p>
+                Počítače jsou mým velkým koníčkem již od mých raných let. Hrávala jsem spoustu počítačových her a ráda
+                jsem počítače rozebírala. (To, že jsem je neseskládala zpět, je věc nepodstatná.:))
+            </p>
+            <p>
+                To, že mě velmi baví i malování a kresba, jsem zjistila v 7 letech. Digitální malby jsem začala tvořit
+                o něco později.
+                V posledních ročnících základní školy jsem se ponořila do tvoření webových stránek za pomocí Wordpressu
+                i jazyků HTML a CSS.
+                Jedním z mých koníčků je také fotografování. Níže na stránce naleznete mou minigalerii.
+            </p>
+        </div>
+        <img src="./assets/imgs/myface.jpg" alt="" class="about__img">
+
+        <div class="about__skillbars">
+            <p class="red-title cascadia">Zkušenosti</p>
+            <div class="skillbar">
+                <div class="skillbar--centralize">
+                    <p class="skillbar__title">HTML</p>
+                    <i class="fab fa-html5"></i>
+                    <div class="bar">
+                        <div class="skill skill-html">99%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillbar">
+                <div class="skillbar--centralize">
+                    <p class="skillbar__title">CSS</p>
+                    <i class="fab fa-css3-alt"></i>
+                    <div class="bar">
+                        <div class="skill skill-css">85%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillbar">
+                <div class="skillbar--centralize">
+                    <p class="skillbar__title">JS</p>
+                    <i class="fab fa-js"></i>
+                    <div class="bar">
+                        <div class="skill skill-js">20%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillbar">
+                <div class="skillbar--centralize">
+                    <p class="skillbar__title">WordPress</p>
+                    <i class="fab fa-wordpress"></i>
+                    <div class="bar">
+                        <div class="skill skill-wordpress">50%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillbar">
+                <div class="skillbar--centralize">
+                    <p class="skillbar__title">Xdesign</p>
+                    <i class="fa solid fa-compass-drafting"></i>
+                    <div class="bar">
+                        <div class="skill skill-xdesign">90%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillbar">
+                <div class="skillbar--centralize">
+                    <p class="skillbar__title">Photoshop</p>
+                    <i class="fa solid fa-camera"></i>
+                    <div class="bar">
+                        <div class="skill skill-photoshop">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__hobbies">
+            <p class="red-title cascadia">Záliby</p>
+
+            <div class="hobby-circles">
+
+                <div class="hobby-circle">
+                    <i class="fas fa-paint-brush fa-2x"></i>
+                    <p>Kreslení</p>
+                </div>
+                <div class="hobby-circle">
+                    <i class="fas fa-camera fa-2x"></i>
+                    <p>Foto</p>
+                </div>
+                <div class="hobby-circle">
+                    <i class="fas fa-desktop fa-2x"></i>
+                    <p>PC hry</p>
+                </div>
+                <div class="hobby-circle">
+                    <i class="fas fa-music fa-2x"></i>
+                    <p>Metal</p>
+                </div>
+                <div class="hobby-circle">
+                    <i class="fas fa-dumbbell fa-2x"></i>
+                    <p>Fitness</p>
+                </div>
+                <div class="hobby-circle">
+                    <i class="fas fa-medal fa-2x"></i>
+                    <p>Florbal</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects-container" id="projects">
+
+        <p class="section-title cascadia" id="projekty">moje projekty</p>
+        <hr class="section-line">
+
+        <p class="red-title cascadia">Webové stránky</p>
+        <p class="projects__info-text">Jednoduchý a moderní design, to je moje! Jsem minimalistka, proto mám ráda, když
+            je všeho užito s mírou a jen v rozsahu, který je nezbytně nutný. Tohle jsou hlavní myšlenky všech mých
+            projektů.</p>
+        <div class="projects__webs">
+            <i class="fa solid fa-circle-arrow-left fa-lg" onclick="plusSlide(-1)"></i>
+            <i class="fa solid fa-circle-arrow-right fa-lg" onclick="plusSlide(+1)"></i>
+
+            <div class="webs">
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-keksikarna.png" class="image" alt="">
+                    <div class="overlay--right-left">
+                        <a href="./assets/webs/keksikarna/index.html" target="_blank" class="text cascadia">Keksíkárna u
+                            skácelů</a>
+                    </div>
+                </div>
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-it-slovnik.png" class="image" alt="">
+                    <div class="overlay--left-right">
+                        <a href="./assets/webs/it-slovnik/index.html" target="_blank" class="text cascadia">IT
+                            slovník</a>
+                    </div>
+                </div>
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-hana.png" class="image" alt="">
+                    <div class="overlay--right-left">
+                        <a href="./assets/webs/cestopisny-web/home.html" target="_blank"
+                            class="text cascadia">Cestopisný web</a>
+                    </div>
+                </div>
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-blog.png" class="image" alt="">
+                    <div class="overlay--left-right">
+                        <a href="./assets/webs/blog-layout/index.html" target="_blank" class="text cascadia">Blog
+                            layout</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="webs">
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-portfolio.png" class="image" alt="">
+                    <div class="overlay--right-left">
+                        <a href="./assets/webs/portfolio-fotografa/index.html" target="_blank" class="text cascadia">Portfolio fotografa</a>
+                    </div>
+                </div>
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-bez-diet.png" class="image" alt="">
+                    <div class="overlay--left-right">
+                        <a href="./assets/webs/webinar-bezdiet/index.html" target="_blank" class="text cascadia">Webinář
+                            BezDiet</a>
+                    </div>
+                </div>
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-pocasi.png" class="image" alt="">
+                    <div class="overlay--right-left">
+                        <a href="./assets/webs/pocasi/index.html" target="_blank" class="text cascadia">Web o počasí</a>
+                    </div>
+                </div>
+                <div class="webs__thumb">
+                    <img src="./assets/imgs/web-preloadery.png" class="image" alt="">
+                    <div class="overlay--left-right">
+                        <a href="./assets/webs/preloadery/index.html" target="_blank" class="text cascadia">Design
+                            preloaderů</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects__gallery">
+            <p class="red-title cascadia">Fotogalerie</p>
+            <p class="projects__info-text">Považuji se za hobby fotografa - fotím vše, co zaujme mé oko a většinou bez
+                poplatků za mé fotoslužby.
+                Nejvíce mě fascinuje příroda, velmi ráda ale fotím i portréty, či společenské a sportovní akce.</p>
+            <picture class="photogallery">
+                <img class="photogallery-img" src="./assets/imgs/portrait1.jpg" alt="Portrét 1">
+                <img class="photogallery-img" src="./assets/imgs/portrait2.jpg" alt="Portrét 2">
+                <img class="photogallery-img" src="./assets/imgs/portrait3.jpg" alt="Portrét 3">
+                <img class="photogallery-img" src="./assets/imgs/portrait4.jpg" alt="Portrét 4">
+                <img class="photogallery-img" src="./assets/imgs/nature1.jpg" alt="Krajina 1">
+                <img class="photogallery-img" src="./assets/imgs/nature2.jpg" alt="Krajina 2">
+                <img class="photogallery-img" src="./assets/imgs/nature3.jpg" alt="Krajina 3">
+                <img class="photogallery-img" src="./assets/imgs/nature4.jpg" alt="Krajina 4">
+            </picture>
+            <div class="gallery-link">
+                <i class="fa solid fa-link fa-sm"></i>
+                <a href="https://eu.zonerama.com/dzordys/" target="_blank">zobrazit vše na Zoneramě</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="inspiration-container" id="moje-inspirace">
+
+        <div class="my-inspiration">
+            <p class="section-title cascadia">moje inspirace</p>
+            <hr class="section-line">
+            </hr>
+            <div class="inspiration__item">
+                <p class="inspiration__text">Když jsem začala tvořit své první weby, začala jsem si více všímat
+                    osobností ze světa IT a toho, čeho dosáhli.
+                    Skvělým příkladem je <a class="cascadia link" href="https://cs.wikipedia.org/wiki/Josef_Pr%C5%AF%C5%A1a_(v%C3%BDvoj%C3%A1%C5%99)" target="_blank">Josef Průša</a>. Ve svých devatenácti letech
+                    tvořil první prototypy jeho 3D
+                    tiskáren a nyní je jeho firma druhý největší výrobce 3D tiskáren na světě.
+                </p>
+                <div class="inspiration__img-container">
+                    <img class="inspiration__img" src="./assets/imgs/prusa.jpg" alt="">
+                    <p class="inspiration__label cascadia label">Josef Průša</p>
+                </div>
+            </div>
+            <div class="inspiration__item">
+                <p class="inspiration__text">Dalším příkladem může být jedna z nejznámějších osobností českého
+                    videoherního průmyslu - <a href="https://cs.wikipedia.org/wiki/Daniel_V%C3%A1vra" target="_blank" class="cascadia link">Daniel Vávra</a>. Stojí za vývojem
+                    oblíbených známých her - Mafia: The City of
+                    Lost Heaven či Kingdom Come: Deliverance.
+                </p>
+                <div class="inspiration__img-container">
+                    <img class="inspiration__img" src="./assets/imgs/vavra.png" alt="">
+                    <p class="inspiration__label cascadia label">Daniel Vávra</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-favs">
+            <p class="red-title cascadia">Moje oblíbené:</p>
+            <div class="favs-container">
+                <div class="favs__item">
+                    <div class="favs__icon">
+                        <img src="./assets/icons/behance.svg" alt="Logo Behance">
+                    </div>
+                    <p class="favs__label cascadia label">Behance</p>
+                    <p class="favs__text">Webová stránka plná originálních výtvorů, sbírám zde často inspiraci.</p>
+                </div>
+                <div class="favs__item">
+                    <div class="favs__icon">
+                        <img src="./assets/icons/photoshop.webp" alt="Logo Behance">
+                    </div>
+                    <p class="favs__label cascadia label">Photoshop</p>
+                    <p class="favs__text">Program, ve kterém můžu zpracovat jednu myšlenku tisíci různými způsoby.</p>
+                </div>
+                <div class="favs__item">
+                    <div class="favs__icon">
+                        <img src="./assets/icons/thewitcher.webp" alt="Logo Behance">
+                    </div>
+                    <p class="favs__label cascadia label">The Witcher 3</p>
+                    <p class="favs__text">Perfektní dobrodružná hra, u které se mohu odreagovat nenásilnými činnostmi,
+                        jako je zabíjení monster :).</p>
+                </div>
+                <div class="favs__item">
+                    <div class="favs__icon">
+                        <img src="./assets/icons/avengers.webp" alt="Logo Behance">
+                    </div>
+                    <p class="favs__label cascadia label">Avengers</p>
+                    <p class="favs__text">Série Avengers od Marvelu patří mezi mé nejoblíbenější filmy vůbec.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-container" id="kontakt">
+
+        <div class="section-line"></div>
+        <p class="section-title cascadia">kontakt</p>
+        <div class="section-line"></div>
+        <p class="contact__text">Máte zajímavou vizi webu, ale nevíte, jak celý web zrealizovat? Chcete se nechat
+            vyfotit, ale nechcete utrácet stovky za profesionálního fotografa? Ať už máte na mysli cokoli, nebojte se mi
+            napsat, ráda Vám s čímkoliv pomůžu!</p>
+        <form class="contact-form">
+            <label for="name"></label>
+            <input class="cascadia label" type="text" name="name" id="name" placeholder="vaše jméno">
+
+            <label for="e-mail"></label>
+            <input class="cascadia label" type="email" name="e-mail" id="e-mail" placeholder="váš e-mail">
+
+            <label for="your-text"></label>
+            <textarea name="your-text" id="your-text" cols="30" rows="2" placeholder="prostor pro vaše sdělení"
+                class="cascadia label"></textarea>
+
+            <input type="submit" value="Odeslat" class="contact-form--submit">
+        </form>
+
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer-section">
+            <img src="./assets/imgs/logo.png" alt="Logo" class="footer__logo">
+            <div class="footer__item">
+                <i class="fa solid fa-location-dot"></i>
+                <p>nám. T. G. Masaryka 2700, Zlín</p>
+            </div>
+            <div class="footer__item">
+                <i class="fa solid fa-envelope"></i>
+                <p>anezka.jordanova@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <p class="cascadia label">Sledujte mě</p>
+            <div class="footer__item">
+                <a href="https://www.instagram.com/dzordys/" target="_blank"><i class="fa brands fa-instagram"></i>Instagram</a>
+            </div>
+            <div class="footer__item">
+                <a href="https://www.behance.net/anezkajordnov" target="_blank"><i class="fa brands fa-behance"></i>Behance</a>
+            </div>
+            <div class="footer__item">
+                <a href="https://github.com/anyjordanova" target="_blank"><i class="fa brands fa-github"></i>Github</a>
+            </div>
+            <div class="footer__item">
+                <a href="https://eu.zonerama.com/dzordys/947740" target="_blank"><i class="fa solid fa-camera"></i>Zonerama</a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <p class="cascadia label">Navštivte také</p>
+            <div class="footer__item">
+                <a href="./assets/webs/keksikarna/index.html" target="_blank">Keksíkárna</a>
+            </div>
+            <div class="footer__item">
+                <a href="./assets/webs/it-slovnik/index.html" target="_blank">IT slovník</a>
+            </div>
+            <div class="footer__item">
+                <a href="./assets/webs/portfolio-fotografa/index.html" target="_blank">Portfolio fotografa</a>
+            </div>
+            <div class="footer__item">
+                <a href="./assets/webs/cestopisny-web/home.html" target="_blank">Cestopisný web</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-container--small">
+        <p>Made with &hearts; by džordys.</p>
+    </div>
+
+    <script src="./assets/js/responsive-nav.js"></script>
+    <script src="./assets/js/hero-nav.js"></script>
+    <script src="./assets/js/nav-scroll.js"></script>
+    <script src="./assets/js/web-slideshow.js"></script>
+    <script src="https://kit.fontawesome.com/9ee5543575.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
