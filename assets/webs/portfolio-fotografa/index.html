@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./fotky/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Anežka Jordánová Photography</title>
+        
+<body>
+    
+<div class="container">
+    <header class="header">
+        <a href="index.html"><img src="./fotky/logo2.png" class="logo" height="90px"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li class="domu"><a href="index.html">Domů</a></li>
+            <li class="mojeprace"><a href="mojeprace.html">Portfolio</a></li>
+            <li class="rady"><a href="rady.html" >Fotograf radí</a></li>
+            <li class="kontakt"><a href="kontakt.html" >Kontakt</a></li>
+        </ul>
+    </header>
+
+    
+
+    <div class="slideshow_container">
+
+        <div class="bg-text"><h1> ANEŽKA JORDÁNOVÁ<br>PHOTOGRAPHY</h1></div>
+
+        <!-- full-width fotky -->
+        <div class="slideshow fade_animate">
+            <img src="./fotky/slide1.jpg" style="width:100%">
+        </div>
+
+        <div class="slideshow fade_animate">
+            <img src="./fotky/slide2.jpg" style="width:100%">
+        </div>
+
+        <div class="slideshow fade_animate">
+            <img src="./fotky/slide3.jpg" style="width:100%">
+        </div>
+
+        <!-- btns -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div>
+            <a href="#omne" class="bg-text2">》POZNEJTE MĚ VÍCE《</a>
+        </div>
+    </div>
+
+    <main id="omne">
+        <img src="fotky/ja.png" height="250px" width="250px" alt="Anežka Jordánová - Photography"></img>
+        <h1 class="h2">PRACOVNÍ ZKUŠENOSTI</h1><br>
+
+        <p>
+            Fotografováním se zabývám již několik let.
+            Moje kariéra začala již na střední škole, kde jsem na praxích
+            dělala asistentku velmi známému českému fotografovi, 
+            <a href="https://www.blogfotografa.cz/" target="_blank" class="odkaz">Josefu Cvrčkovi.</a>
+            Od něj jsem také později absolvovala kurz <a href="https://www.blogfotografa.cz/online-kurzy-2/jak-fotit/" target="_blank" class="odkaz">Jak fotit a jak nastavit fotoaparát</a>,
+            který je mimochodem nejlepším kurzem fotografování v celé ČR.<br><br>
+        </p>
+
+        <img src="./fotky/r_red.png" class="bg_color1">
+        <img src="./fotky/l_orange.png" class="bg_color2">
+    
+        <br><h1 class="h2">A CO FOTÍM?</h1><br>
+
+        <p>
+            Jsem spíše outdoorový typ fotografa, 
+            ale snažím se vyjít vstříc každému, takže s fotografováním v ateliéru
+            nemám žádný problém.<br>
+            Nejvíce jsem ovšem zaměřená na <b>krajiny</b>, <b>makro snímky</b>, či <b>portréty 'pod širým nebem'</b>.
+            Tyhle snímky se následně dají skvěle využít například jako <b>podklady
+            pro webové stránky</b>, či jako <b>stylový prvek</b> výzdoby 
+            vašeho domova. Více uvidíte v <a class="odkaz" href="mojeprace.html">galerii</a>.
+        </p><br>
+    </main>
+
+    <div class="parallax">
+        <div class="parallax-text">
+            <p>Máte zájem o spolupráci?</p>
+            <a class="btn" href="kontakt.html">》KLIKNĚTE SEM.《</a>
+        </div>
+    </div>
+
+    <div class="bottom-content">
+        <h1 class="bottom-content-text">PORTFOLIO</h1>
+        <div class="galery">
+            <div class="column">
+                <img src="./galerie_zvirata/08.jpg" style="width:100%">
+                <img src="./galerie_priroda/09.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="./galerie_portrety/04.jpg" style="width:100%">
+                <img src="./galerie_portrety/11.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="./galerie_priroda/23.jpg" style="width:100%">
+                <img src="./galerie_priroda/17.jpg" style="width:100%">            
+            </div>
+            <div class="column">
+                <img src="./galerie_portrety/05.jpg" style="width:100%">
+                <img src="./galerie_portrety/17.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="bottom-content-text">
+            <a class="btn4" href="mojeprace.html">PRO VÍCE FOTEK KLIKNĚTE SEM</a>
+        </div>
+    </div>
+
+    
+        
+    <footer>
+        <p>&copy; 2020 Anežka Jordánová | All rights reserved.</p>
+    </footer>
+
+</div>
+
+    <script>
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/prev btns
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slideshow");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+    </script>
+
+    </body>
+</html>

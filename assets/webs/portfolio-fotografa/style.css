@@ -1,0 +1,788 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    height: auto;
+    width: auto;
+    margin: auto;
+    animation: fade 1s;
+
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+
+  /*
+nav {background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 5px #191919;
+    margin:auto;
+    text-align: center;
+    padding: 25px ;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+}
+
+nav li {
+    display: inline;
+    color:black; 
+    text-transform: uppercase;
+    padding: 15px; 
+    animation: menu 0.5s; 
+    position: relative; 
+    animation-fill-mode: forwards; 
+    visibility: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+nav a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 90%;
+    height: 3px;
+    background: #a73c3c;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    color:#775d5d;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+\
+*/
+
+.menu_icon {
+    width: 30px;
+    margin: -0.5% auto;
+
+}
+
+  /* header */
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 0px 1px 6px #191919;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    font-size: 15px;
+    padding: 12px;
+    min-width: 200px;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .header li a {
+    animation: menu 1s; 
+    position: relative; 
+    animation-fill-mode: forwards; 
+    visibility: hidden;
+  }
+
+  @keyframes menu {
+    from {visibility: hidden; top:-200px;}
+    to {visibility: visible; top:0px;}
+}
+.domu {animation-delay: 0.2s;}
+.mojeprace {animation-delay: 0.4s;}
+.rady {animation-delay: 0.6s;}
+.kontakt {animation-delay: 0.8s;}
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    float: left;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+    left: 20px;
+    z-index: 2;
+    animation: pohyb 1.5s;
+    font-size: 20px;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes pohyb {
+    from {visibility: hidden; left: -10%; top:-45%;}
+    to {visibility: visible; top: -2px; left: 10px;}
+}
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+}
+
+.menu a:hover {
+    color:#775d5d;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.bg-text {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 130px;
+    left: 20%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding-left: 50px;
+    animation: pohyb5 1s;
+    max-width: 50%;
+    min-width: 400px;
+    font-size: 12px;
+}
+@keyframes pohyb5 {
+    from {visibility: hidden; top: -100%;}
+    to {visibility: visible; top: 130px;}
+}
+
+.bg-text2 {
+    background-color: rgba(0, 0, 0, 0.39);
+    font-weight: bold;
+    border: 3px solid none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    animation: pohyb4 1s;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    max-width: 300px;
+    min-width: 250px;
+    color: white;
+
+}
+.bg-text2:hover {background-color: #000;}
+@keyframes pohyb4 {
+    from {visibility: hidden; top: 100%;}
+    to {visibility: visible; top: 90%;}
+}
+
+main {
+    text-align: center;
+    max-width: 800px;
+    min-width: 250px;
+    padding: 100px 10px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: fade 0.5;
+}
+
+.h2 {
+    font-size: 35px;
+    box-shadow: 0px 2px  rgb(163, 163, 163);
+    margin: 0px 50px;
+}
+
+.odkaz{
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+    cursor: pointer;
+    font-weight: 650;
+}
+.odkaz:hover {
+    color: rgb(0, 162, 255);
+    text-decoration: underline;
+}
+
+.obsah {
+    text-align: center;
+}
+
+.text {
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    width: 400px;
+    height: 650px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-table;
+    opacity: 0.8;
+}
+.text:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.hover_imgs {
+    display: inline-flex;
+    width: 50%;
+    margin: auto 25%;
+    font-size: 25px;
+
+}
+
+.container1 {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: inline-table;
+    padding: 15px;
+
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.container1:hover .image {
+    opacity: 0.3;
+}
+  
+.container1:hover .middle {
+    opacity: 1;
+}
+  
+.text1 {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+.obrazek {
+    text-align: center;
+    width: 100%;
+}
+
+.obrazek2 {
+    text-align: center;
+    width: 100%;
+}
+
+.obrazek2 div {
+    padding: 3px;
+    display: inline-block;
+}
+
+.galery {
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 4px;
+}
+
+.column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout 4 --> 2 */
+@media screen and (max-width: 1200px) {
+    .column {
+      flex: 48%;
+      max-width: 50%;
+    }
+}
+
+/* Responsive layout - 2 --> 1 */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+.rezervation {
+    max-width: 600px;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.txtb{
+    border: 1px solid lightgray;
+    margin: 8px;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.txtb label{
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.txtb input, .txtb area{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 6px;
+    z-index: -3;
+}
+
+.zprava {
+    font-weight: bold;
+    min-width: 250px;
+    max-width: 420px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: rgba(230, 230, 230, 0.705);
+    text-align: center;
+    position: relative;
+    padding: 5px 100px;
+    margin: auto;
+    animation: pohyb2 6s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@keyframes pohyb2 {
+    from {visibility: hidden; left: -100%;}
+    to {visibility: visible; left: 0%;}
+}
+
+.social {
+    text-align: center;
+}
+
+.social li {
+    display: inline;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    padding: 20px auto;
+}
+
+footer {
+    text-align: center;
+    color:  rgb(151, 150, 150);
+    background-color: rgb(240, 234, 234);
+    padding: 12px 0px;
+    font-size: 18px;
+    bottom: 0px;
+}
+footer.animate {
+    padding: 20px;
+    position: relative;
+    visibility: hidden;
+    animation: pohyb3 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes pohyb3 {
+    from { visibility:hidden; bottom: -200px;}
+    to {visibility: visible; bottom: 0px;}
+}
+
+.btn2 {
+    background: rgba(0, 0, 0, 0.952);
+    padding: 13px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+}
+.btn2:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s ease;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    animation: fade 0.5s;
+}
+
+.odkaz2 {
+    text-decoration:none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.hover_line {
+    position: relative;
+}
+
+.hover_line::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #a73c3c;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.hover_line:hover {
+    color:#727272;
+}
+
+.hover_line:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.hover_line:hover { color: gray;}
+
+.float_l {
+    text-align: left;
+}
+
+.bg_color1 {
+    height: 800px;
+    position: absolute;
+    top: 105%;
+    right: 0px;
+    z-index: -1;
+}
+
+.bg_color2 {
+    height: 800px;
+    position: absolute;
+    top: 130%;
+    left: 0px;
+    z-index: -2;
+}
+
+.bg_color3 {
+    height: 700px;
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    z-index: -2; 
+}
+
+.bg_color4 {
+    height: 700px;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    z-index: -1;
+}
+
+.bg_color5 {
+    height: 700px;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    z-index: -2;
+}
+
+.bg_color6 {
+    height: 700px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    z-index: -1;
+}
+
+.btn3 {
+    background-color: rgb(0, 0, 0);
+    border: 3px solid none;
+    z-index: 2;
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    min-width: 250px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.btn3:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    animation: fade 0.5s;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+}
+
+/* btns */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+.fade_animate {
+    -webkit-animation-name: fade_animate;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade_animate;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade_animate {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade_animate {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.parallax {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./fotky/photoshoot.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-text {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    top: 250px;
+    font-size: 50px;
+}
+
+.btn {
+    border: 1px solid white;
+
+    z-index: 2;
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    min-width: 250px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    animation: fade 0.5s;
+}
+
+.bottom-content {
+    background-color: rgb(255, 255, 255);
+    padding: 100px 0 20px 0;
+
+}
+
+.bottom-content-text {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.btn4 {
+    background-color: rgb(0, 0, 0);
+    border: 3px solid none;
+    z-index: 2;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    margin: auto 41%;
+    
+}
+.btn4:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    font-weight: bold;
+    color: black;
+    animation: fade 0.5s;  
+}
+
+@media (max-width: 1500px) {
+    .bg-text2 {
+      display: none;
+    }
+}
